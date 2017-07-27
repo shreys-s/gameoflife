@@ -3,7 +3,7 @@ VALUES (1, 'Dave', 'Canda', 'Mr', date'1960-05-01');
 INSERT INTO people (person_id, given_name, family_name, title) 
 VALUES (2, 'Simon', 'Fox', 'Mr');
 INSERT INTO people (person_id, given_name, family_name, title) 
-VALUES (3, 'Dave', 'Frog', (SELECT 'Mr' FROM dual));
+VALUES (3, 'Peter', 'Frog', (SELECT 'Mr' FROM dual));
 INSERT INTO people (person_id, given_name, family_name, title) 
   WITH names AS ( 
     SELECT 4, 'Ruth',     'Fox',      'Mrs'    FROM dual UNION ALL 
