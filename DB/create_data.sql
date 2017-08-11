@@ -1,5 +1,5 @@
 INSERT INTO people 
-VALUES (1, 'Dave', 'Canda', 'Mr', date'1960-05-01');
+VALUES (1, 'kunal', 'US', 'Mr', date'1990-05-01');
 INSERT INTO people (person_id, given_name, family_name, title) 
 VALUES (2, 'Simon', 'Fox', 'Mr');
 INSERT INTO people (person_id, given_name, family_name, title) 
