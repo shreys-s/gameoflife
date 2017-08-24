@@ -6,10 +6,10 @@ INSERT INTO people (person_id, given_name, family_name, title)
 VALUES (3, 'Anshul', 'TestUser', (SELECT 'Mr' FROM dual));
 INSERT INTO people (person_id, given_name, family_name, title) 
   WITH names AS ( 
-    SELECT 4, 'Ruth',     'Fox',      'Mrs'    FROM dual UNION ALL 
-    SELECT 5, 'Isabelle', 'Squirrel', 'Miss'   FROM dual UNION ALL 
-    SELECT 6, 'Justin',   'Frog',     'Master' FROM dual UNION ALL 
-    SELECT 7, 'Lisa',     'Owl',      'Dr'     FROM dual 
+    SELECT 4, 'Shrey',     'Sangal',      'Mr'    FROM dual UNION ALL 
+    SELECT 5, 'Nimisha', 'Sharma', 'Miss'   FROM dual UNION ALL 
+    SELECT 6, 'Vikas',   'Sivastav',     'Master' FROM dual UNION ALL 
+    SELECT 7, 'Ranjana',     'Jindal',      'Dr'     FROM dual 
   ) 
   SELECT * FROM names;
   
