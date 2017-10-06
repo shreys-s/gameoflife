@@ -1,9 +1,9 @@
 INSERT INTO people 
-VALUES (1, 'Shrey', 'USA', 'Mr', date'2000-05-01');
+VALUES (1, 'Shrey1', 'USA', 'Mr', date'2000-05-01');
 INSERT INTO people (person_id, given_name, family_name, title) 
-VALUES (2, 'Vikas', 'Fox', 'Mr');
+VALUES (2, 'Shruti', 'Fox', 'Mr');
 INSERT INTO people (person_id, given_name, family_name, title) 
-VALUES (3, 'Shru', 'TestUser', (SELECT 'Mr' FROM dual));
+VALUES (3, 'Anshl', 'TestUser', (SELECT 'Mr' FROM dual));
 INSERT INTO people (person_id, given_name, family_name, title) 
   WITH names AS ( 
     SELECT 4, 'Shrey',     'Sangal',      'Mr'    FROM dual UNION ALL 
