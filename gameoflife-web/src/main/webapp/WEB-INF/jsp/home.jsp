@@ -61,7 +61,7 @@
     </style>
 </head>
 <body>
-<h2>Welcome to CTC's Game Of Life Demo application!</h2>
+<h2>Welcome to Demo application!</h2>
 
 <div class="intro">
     <p>CTC being a wonderful customer to us.
