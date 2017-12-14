@@ -64,8 +64,7 @@
 <h2>Welcome to Demo application!</h2>
 
 <div class="intro">
-    <p>CTC being a wonderful customer to us.
-        This is a really cool web version of Conway's famous Game Of
+    <p> This is a really cool web version of Conway's famous Game Of
         Life. The Game of Life is a cellular automaton devised by the British
         mathematician John Horton Conway way back in 1970.</p>
 
