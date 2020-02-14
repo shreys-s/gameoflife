@@ -34,6 +34,7 @@ pipeline
 			steps
 			{
 				sh "mvn test"
+				junit allowEmptyResults: true, testResults: '**/*.xml'
 			}
 		}
 		stage ('Sonar Analysis')
