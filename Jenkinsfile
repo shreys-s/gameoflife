@@ -71,14 +71,14 @@ pipeline
 		{
 			steps
 			{
-				sh returnStdout: true, script: 'docker build -t docker.io/shrutifizeegupta/assignment/devopssampleapplication:${BUILD_NUMBER} -f Dockerfile .'
+				sh returnStdout: true, script: 'docker build -t docker.io/shrutifizeegupta/assignment:${BUILD_NUMBER} -f Dockerfile .'
 			}
 		}
 		stage ('Push to DTR')
 	    {
 		    steps
 		    {
-		    	sh returnStdout: true, script: 'docker push docker.io/shrutifizeegupta/assignment/devopssampleapplication:${BUILD_NUMBER}'
+		    	sh returnStdout: true, script: 'docker push docker.io/shrutifizeegupta/assignment:${BUILD_NUMBER}'
 		    }
 	    }
         stage ('Stop Running container')
@@ -100,7 +100,7 @@ pipeline
 		{
 		    steps
 		    {
-		        sh 'docker run --name devopssampleapplication_shrutigupta -d -p 7000:8080 docker.io/shrutifizeegupta/assignment/devopssampleapplication:${BUILD_NUMBER}'
+		        sh 'docker run --name devopssampleapplication_shrutigupta -d -p 7000:8080 docker.io/shrutifizeegupta/assignment:${BUILD_NUMBER}'
 		    }
 		}
 	}
