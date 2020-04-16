@@ -67,7 +67,7 @@ pipeline
                 )
 			}
 		}
-		stage ('Docker Image')
+		/*stage ('Docker Image')
 		{
 			steps
 			{
@@ -102,7 +102,7 @@ pipeline
 		    {
 		        sh 'docker run --name devopssampleapplication_shrutigupta -d -p 7000:8080 docker.io/shrutifizeegupta/assignment:${BUILD_NUMBER}'
 		    }
-		}
+		}*/
 	}
 	post 
 	{
